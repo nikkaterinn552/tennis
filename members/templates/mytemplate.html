@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport", content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'mystyles.css' %}">  
+    <title>Trending Techs</title>
+</head>
+<body>
+
+    <div class="topnav">
+        <a href="/">HOME</a> |
+        <a href="/members">MEMBERS</a>
+    </div>
+
+    <h1>Latest Technology</h1>
+    <img src="{% static 'BluePlate.jpg' %}">
+
+    {% block content %}
+    <div class="li">
+        <ul>
+            <li onclick="window.location = 'quantum/'">Quantum Computing</li>
+            <li onclick="window.location = 'quantum/'">Generative AI</li>
+            <li onclick="window.location = 'quantum/'">Virtual Reality</li>
+        </ul>
+    </div>
+    {% endblock %}
+</body>
+</html>

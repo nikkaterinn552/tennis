@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport", content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'mystyles.css' %}">  
+    <title>Trending Techs</title>
+</head>
+<body>
+
+    <div class="topnav">
+        <a href="/">HOME</a> |
+        <a href="/members">MEMBERS</a> |
+        <a href="/technology">Technology</a>
+    </div>
+
+    <div class="mycard2">
+        <h1>Quantum Computing</h1>
+        <img src="{% static 'QuantumComputing.jpg'%}">
+        <h4>Quantum computing is a multidisciplinary field comprising aspects of computer science, physics, and mathematics
+            that utilizes quantum mechanics to solve complex problems faster than on classical computers. The field of quantum
+            computing includes hardware research and application development. Quantum computers are able to solve certain types
+            of problems faster than classical computers by taking advantage of quantum mechanical effects, such as superposition
+            and quantum interference.</h4>
+        <p>Source: AWS</p>
+    </div>
+    
+    
+</body>
+</html>
